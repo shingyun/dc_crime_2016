@@ -1,0 +1,171 @@
+body{
+	min-height: 600px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+	top: 0px;
+}
+
+.headline {
+   width: 100%;
+   height: 120px;
+   top: 0px;
+   font-family: 'Avenir','Helvetica','san-serif';
+   background-color: white;
+   position: fixed;
+   border-bottom: 1px solid #CE5374;
+}
+
+.headline h1 {
+	color: #CE5374;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size:34px;
+	font-weight: bold;
+	transform: translate(30%,27.5%);
+}
+
+.author {
+	color: #666666;
+	transform: translate(30%,27.5%);
+}
+
+.author a{
+	color: #CE5374;
+}
+
+.author a:hover{
+	color: #CE5374;
+	text-decoration: underline;
+}
+
+#map {
+	width: 100%;
+	height: 450px;
+	margin: auto;
+    padding: 0;
+    top:20px;
+
+}
+
+
+.menu {
+	color: #d3d3d3;
+	height: 430px;
+	position: absolute;
+	z-index: 9999;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(23,27,30,0.7);
+	font-family: 'Avenir','Helvetica','san-serif';
+
+}
+
+.menu_title {
+	color: #d3d3d3;
+	padding: 10px 20px;
+	border-bottom: 1px solid; 
+}
+
+.menu span{
+	font-size: 28px;
+}
+
+
+.menu_type {
+	width: 250px;
+	padding: 7px 20px;
+	cursor: pointer;
+	color: #d3d3d3;
+	font-size: 15px;
+	font-family: 'Avenir','Helvetica','san-serif';
+}
+
+.menu_hovered {
+	background-color: rgba(255,255,255,0.1);
+}
+
+.menu_clicked {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.source{
+	padding: 10px 20px;
+	opacity: 0.8;
+}
+
+.axis .domain {
+	stroke-width: 0px;
+}
+
+.axis .tick line{
+	stroke-width: 0.5px;
+	stroke-dasharray: 3px;
+	stroke: #d3d3d3;
+}
+
+.axis .tick text{
+	fill: #666;
+	font-size: 11px;
+}
+
+.hour_not_hovered{
+	stroke: #d3d3d3;
+	stroke-width: 2.5px;
+	fill: none;
+	opacity: 0.8;
+}
+
+.line_hovered{
+	stroke: #CE5374;
+	opacity: 1;
+	fill: none;
+	stroke-width: 2.5px;
+}
+
+.n_of_crime {
+	fill: #666;
+	text-anchor: middle;
+	font-size: 12.5px;
+}
+
+/*#crime_type, #crime_hour{
+	position: relative;
+}*/
+
+.subtitle, .content{
+	width: 550px;
+	transform: translate(70%,0);
+}
+
+.subtitle{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-family: 'Avenir','Helvetica','san-serif';
+    color: #CE5374;
+}
+
+.map_title{
+	margin-top: 10px;
+}
+
+.content{
+	font-size: 19px;
+    font-family: 'Minion Pro','Times','serif';
+    color: #666;
+}
+
+.content1{
+	margin-top: 150px;
+}
+
+.des {
+	font-size: 19px;
+	font-family: 'Minion Pro','Times','serif';
+    width: 550px;
+    font-style: oblique;
+}
+
