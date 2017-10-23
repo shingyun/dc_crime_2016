@@ -58,6 +58,15 @@ function dataloaded(err, crime_2016){
     crime_map = Map();
     d3.select('#map').datum(crime_2016).call(crime_map);
 
+    //Back to top button function
+    $('#btn_back').click(function(){
+      $('html,body').animate({
+         scrollTop : 0
+      }, 250);
+      return false
+    })
+    
+
 }//dataloaded
 
 function parse(d){

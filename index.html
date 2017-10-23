@@ -17,52 +17,54 @@
 
 <body>
     <div id = 'container'>
+       <div id = 'map'></div>
+       <div class = 'headline_notfixed'>
+         <h1>Crime in DC:<br> Thefts &amp; auto thefts dominate</h1>
+         <p class = 'author'>August 2017 | <a href="https://www.shingyun-chiang.com/work" target='_blank'>Shing-Yun Chiang</a> &nbsp;&nbsp; Advisor | Matthew Carroll</p>
+       </div>
        <div class = 'content content1'>
-         <p>Are you a resident in Washington, D.C.? Do you work or study in D.C.? An analysis of data on crimes in DC in 2016 provides you a glance of crime-prone areas and what kind of crimes you should be aware of in DC.</p>
+         <p>Are you a resident in Washington, D.C.? Do you work or study in D.C.? It may surprise you to learn that downtown D.C. and Capitol Hill neighborhoods have most thefts — which excludes thefts from auto and motor vehicles.<br><br>
+         Violent crimes, such as robbery, assault, sex abuse and murders, are more likely to happen in central and eastern D.C., although similar crimes happen across the city. Western D.C. is relatively safer.<br><br>
+         This crime map above is based on nine different kinds of offenses. The data is from the <a href="https://mpdc.dc.gov/" target='_blank'>Washington, D.C. government</a>. On the map, one circle is one reported crime. The brighter the circle, the more crimes happened at that location.
+         </p>
        </div>
        <div class = 'subtitle type_title'>
          <h3>Theft is the biggest crime in DC</h3>
        </div>
        <div class = 'content content2'>
-          <p>Last year, 13,951 theft crimes occurred in Washington, D.C.. The number of theft crimes in 2016 is a bit lower than 2015 when 14,016 occurred. However, theft is still the top crime in D.C. and mostly happened during daytime in downtown D.C., Capital Hill and surrounding areas.<br><br>
-          Theft is the most serious crimes in D.C., followed by auto theft which had 10,789 crimes last year. Theft and auto theft are the only two crimes that occurred above 10,000 times in 2016. Robbery, motor vehicle theft, assault and burglary were between 2,000 to 3,000 times. Sex abuse, homicide were below 350. Arson had 6.</p>
+          <p>Thefts are the largest crime category in D.C. The number dropped slightly between 2016 and 2015 — 13,951 from 14,016.<br><br>
+          Auto theft is the next most numerous crime, with 10,789 last year. Theft and auto theft are the only two crimes that happened more than 10,000 times in 2016. Robbery, motor vehicle theft, assault and burglary were between 2,000 to 3,000 times. Sex abuse, homicide were below 350. Arson had 6.</p>
           <br>
-          <p class = 'des'>The chart below shows the numbers of crimes in D.C. in 2016.</p>
+          <p class = 'des'>The chart below shows the total numbers of crimes in D.C. in 2016.</p>
        </div>
        <div id = 'crime_type'></div>
-       <div class = 'content content3'>
-         <p>Theft in this analysis refers to “ Theft/Other” in the original data set. According to Metropolitan Police Department of D.C., Theft/Other is a broad inclusion of theft offenses and excludes theft of items from auto(auto theft) and motor vehicle or motor vehicle itself(motor vehicle theft).</p>
-       </div>
        <div class = 'subtitle hour_title'>
-         <h3>Thieves steal in daytime</h3>
+         <h3>Favorite time to steal? Daytime </h3>
        </div>
        <div class = 'content content4'>
-         <p>The time when crimes happened in analysis is estimated to be the earliest possible occurred date and time of the crimes, instead of the report date. <br><br>
-          Most of the theft happened in daytime, especially during afternoon and reached the peak at 15:00 when people are still in office or school. The number of theft crimes declined from evening, but was higher than other crimes.  Auto left has a similar pattern as theft.<br><br>
-          Violent crimes such as robbery and assault inclined slightly from noon to midnight. The numbers of sex abuse and homicide distributed relatively evenly.</p>
+         <p>Most of the theft happened in daytime, especially during afternoon. Thefts reached a peak at 3 p.m., when people are still in office or school. The number of theft crimes declined during the evening, but was higher than other crimes. Auto thefts had a similar pattern.<br><br>
+          Violent crimes such as robbery and assault increased slightly between noon and midnight. Sex abuse and homicides were distributed relatively evenly.</p>
           <br>
           <p class = 'des'>The chart below shows the hour when crimes happened in a day in D.C. in 2016. Hover over the lines to see the exact numbers. Arson is not inculded in this chart</p>
        </div>
-       <div id = 'crime_hour'></div>
-       <div class = 'subtitle map_title'>
-         <h3>Thieves are highly active in downtown DC</h3>
-       </div>
-       <div class = 'content content5'>
-          <p>The crime map based on nine kinds of offenses in D.C. shows that downtown D.C., Capital Hill and nearby areas suffer from theft and auto left seriously.<br>
-          <br>
-          Violent crimes such as robbery, assault, sex abuse and homicide are more likely to happen in central and eastern D.C.. Western D.C. is a relatively safe neighborhood.</p>
-          <br>
-          <p class = 'des'>Take a look at the interactive crime map below. One circle is one case. The brighter the circle, the more crime happened at the same location.</p>
-       </div>
-       <div id = 'map'></div>   
+       <div id = 'crime_hour'></div>   
        <div class = 'menu'>
          <p class = 'menu_title'><span id = 'nOfCrime'></span> crimes in 2016</p>
        </div>
-       <div class = 'headline'>
-         <h1>Theft is Rampant in DC Last Year</h1>
-         <p class = 'author'>August 2017 | by <a href="https://www.shingyun-chiang.com/work" target='_blank'>Shing-Yun Chiang</a></p>
+       <div class ='content footnotes'>
+         <p class = 'des'>
+         Notes:<br>
+         1. Theft in this analysis refers to “Theft/Other” in the original data set. According to Metropolitan Police Department of D.C., Theft/Other is a broad inclusion of theft offenses and excludes theft of items from auto(auto theft) and motor vehicle or motor vehicle itself(motor vehicle theft).<br>
+         2. The time when crimes happened was estimated by referring to the earliest possible time in report data.
+         </p>
        </div>
-
+       <div class = 'button'>
+          <button class='btn_back' id = 'btn_back'>Back to crime map
+          </button>
+       </div>
+       <br>
+       <br>
+       <br>
     </div>
 
 <script src="d3.js"></script>
