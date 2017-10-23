@@ -140,12 +140,13 @@ body{
 
 .subtitle, .content{
 	width: 100%;
+	transform: translate(30%,0);
 
 }
 
 .content p{
 	width: 550px;
-	transform: translate(70%,0);
+
 }
 
 .subtitle{
@@ -159,7 +160,6 @@ body{
 	width: 550px;
 	font-size: 20px;
 	font-weight: bold;
-	transform: translate(70%,0);
 }
 
 .map_title{
