@@ -139,8 +139,8 @@ body{
 }
 
 .subtitle, .content{
-	width: 100%;
-	transform: translate(30%,0);
+	width: 65%;
+	transform: translate(45%,0);
 
 }
 
