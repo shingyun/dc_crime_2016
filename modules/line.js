@@ -13,7 +13,24 @@ function Line(){
   //set axis
   var axisX = d3.axisBottom()
       .scale(scaleX)
-      .tickSize(-h_line);
+      .tickSize(-(h_line+30))
+      .tickFormat(function(d){
+        
+        d = Number(d);
+
+        if(d < 12){
+          return d+'am' 
+        } 
+
+        if(d == 12){
+        return d+'pm'
+        } 
+
+        if(d > 12){
+        return (d-12)+'pm'
+        }
+      });
+
   var axisY = d3.axisLeft()
       .scale(scaleY)
       .tickSize(-(w*0.5));
@@ -43,14 +60,15 @@ function Line(){
 
 
 	  plot.append('g').attr('class','axis axis-x')
-            .attr('transform','translate(0,'+h_line+')')
-            .call(axisX);
+            .attr('transform','translate(0,'+ (h_line+20)+')')
+            .call(axisX)
+            .selectAll('text')
+              .attr('transform', 'rotate(-60)');
       
       plot.append('g').attr('class','axis axis-y')
             .call(axisY);
 
       //draw the path      
-
       for(i=0;i<datum.length;i++){
           
           plot.append('path')
@@ -67,8 +85,8 @@ function Line(){
             d3.selectAll('.n_of_crime').remove();
             d3.selectAll('.des_tooltip').remove();
             _drawHoveredLine(plot,d);
-         	_drawText(plot,d);
-         	_crimeDescription(plot,d);
+          	_drawText(plot,d);
+          	_crimeDescription(plot,d);
 
         })
 
