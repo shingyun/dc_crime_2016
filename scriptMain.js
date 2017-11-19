@@ -34,7 +34,6 @@ function dataloaded(err, crime_2016){
 
     d3.select('#crime_type').datum(crime_offense).call(bar_type);
 
-
     //sort data for line chart
     crime_sorted_hour = crime_2016.sort(function(a,b){return a.hour - b.hour});
 

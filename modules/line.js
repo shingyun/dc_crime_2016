@@ -78,6 +78,7 @@ function Line(){
               .attr('d',path);
       }
 
+      //Redraw seleted path
       d3.selectAll('.'+_className)
         .on('mouseenter',function(d){
 
